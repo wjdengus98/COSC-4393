@@ -3,7 +3,7 @@ from dip import *
 """
 Do not import cv2, numpy and other third party libs
 """
-
+import math
 
 class Operation:
 
