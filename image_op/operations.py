@@ -24,6 +24,8 @@ class Operation:
 
         return image
 
+##test code
+        print("Hello world")
     def chroma_keying(self, foreground, background, target_color, threshold):
         """
         Perform chroma keying to create an image where the targeted green pixels is replaced with
