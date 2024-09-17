@@ -39,9 +39,10 @@ class Operation:
         return: output_image
         """
         output_image = zeros(shape(foreground), dtype=uint8)
+
         for i in range(foreground.shape[0]):
             for j in range(foreground.shape[1]):
-                distance = sqrt(sum((foreground[i,j] - target_color) ** 2))
+                distance = sqrt(sum((foreground[i, j] - target_color) ** 2))
                 #pixel_color = foreground[i, j]
                 # distance = sqrt((pixel_color[0] - target_color[0]) ** 2 +
                 #                 (pixel_color[1] - target_color[1]) ** 2 +
@@ -53,3 +54,7 @@ class Operation:
                     output_image[i, j] = foreground[i, j]
 
         return output_image
+
+
+
+        
